@@ -1,5 +1,10 @@
 <?php
 include("../controladores/verificar_sesion.php");
+include("../controladores/conexion_db.php");
+
+if(isset($_POST["btn_enviar_reserva"])){
+    include("../controladores/controlador_reservas.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -16,7 +21,7 @@ include("../controladores/verificar_sesion.php");
 
     <!--imagen -->
     <label for="menu-palanca" class="menu-btn">
-      <img src="../imajenes/icono-alebrige.png" alt="Menú" />
+      <img src="../imajenes/hamburgesa.png" alt="Menú" />
     </label>
 
     <!-- menu lateral -->
@@ -39,6 +44,11 @@ include("../controladores/verificar_sesion.php");
     <!-- fin del menu-->
 
     <!-- Contenido de reservas -->
+
+    <div class="alerta alerta-warning">
+      <h3>Esta parte del proyecto esta en desarrollo todavia, estamos trabajando mucho para que puedas hacer reservas para tus viajes.</h3>
+     </div>
+
     <div class="pagina-contenedor">
       <h1 class="seccion-titulo">Realiza tu Reserva</h1>
 
@@ -101,7 +111,7 @@ include("../controladores/verificar_sesion.php");
               <select id="paquete" name="paquete" required>
                 <option value="">Elige un paquete</option>
                 <option value="explorador">Explorador - $3,500 (3 días)</option>
-                <option value="aventurero">Aventurero - $6,800 (5 días) ⭐ Más Popular</option>
+                <option value="aventurero">Aventurero - $6,800 (5 días)  Más Popular</option>
                 <option value="experiencia-total">Experiencia Total - $12,500 (7 días)</option>
                 <option value="familiar">Familiar - $18,000 (5 días - 4 personas)</option>
                 <option value="inmersion-cultural">Inmersión Cultural - $8,900 (6 días)</option>
@@ -117,7 +127,10 @@ include("../controladores/verificar_sesion.php");
                 <option value="Nanacamilpa">Nanacamilpa - Tierra de luz</option>
                 <option value="Tecoaque">Tecoaque - Zona Arqueológica</option>
                 <option value="Calpulalpan">Calpulalpan - Centro histórico</option>
-                <option value="puebla">Puebla - Historia y Tradición</option>
+                <option value="Val_Quirico">Val'Quirico - destino turístico</option>
+                <option value="Zona_Arqueologica_de_Xochitécatl">Zona Arqueológica de Xochitécatl - Zona arqueologica</option>
+                <option value="Tlaxco">Tlaxco - Pueblo magico</option>
+                <option value="Barca_de_la_fe">Barca de la fe - Pueblo magico</option>
                 <option value="varios">Tour por Varios Destinos</option>
                 <option value="consultar">Necesito Asesoría</option>
               </select>
@@ -170,7 +183,7 @@ include("../controladores/verificar_sesion.php");
                 <option value="vegetariano">Vegetariano</option>
                 <option value="vegano">Vegano</option>
                 <option value="sin-gluten">Sin gluten</option>
-                <option value="alergias">Tengo alergias alimentarias</option>
+                <option value="alergias">Tengo alergias alimentarias (Escribirlas en los comentarios adicionales)</option>
               </select>
             </div>
 
@@ -212,6 +225,9 @@ include("../controladores/verificar_sesion.php");
           <!-- Metodo de Pago -->
           <div id="metodo-pago-div">
             <h3 id="h3-info-pago">Información de Pago</h3>
+            <div class="alerta alerta-warning">
+      <p>Esta parte del proyecto esta en desarrollo todavia, estamos trabajando mucho para que puedas hacer reservas para tus viajes.</p>
+     </div>
             
             <div class="form-grupo">
               <label for="metodo-pago">Método de Pago Preferido:</label>
@@ -241,7 +257,7 @@ include("../controladores/verificar_sesion.php");
               />
               <span>
                 Acepto los <a href="../html/terminos-y-condiciones.php" id="ter-con">términos y condiciones</a> 
-                y la <a href="#" id="pol-cancelacion">política de cancelación</a>
+                y la <a href="../html/soporte-tecnico.php" id="pol-cancelacion">política de cancelación</a>
               </span>
             </label>
           </div>
@@ -260,23 +276,23 @@ include("../controladores/verificar_sesion.php");
         
         <div class="valores-grid" id="llamanos-reservas">
           <div class="valor-card">
-            <h4>📞 Llámanos</h4>
+            <h4> Llámanos</h4>
             <p>+52 (771) 123-4567<br>Lunes a Viernes<br>9:00 AM - 7:00 PM</p>
           </div>
 
           <div class="valor-card">
-            <h4>💬 WhatsApp</h4>
+            <h4> WhatsApp</h4>
             <p>+52 771 123 4567<br>Respuesta inmediata<br>24/7</p>
           </div>
 
           <div class="valor-card">
-            <h4>✉️ Email</h4>
+            <h4> Email</h4>
             <p>reservas@nenemia.com.mx<br>Respuesta en 24 hrs</p>
           </div>
         </div>
 
         <div id="ya-no-puedo-mas-loco">
-          <h3 id="h3-op-pago-flex">💳 Opciones de Pago Flexibles</h3>
+          <h3 id="h3-op-pago-flex"> Opciones de Pago Flexibles</h3>
           <p id="p-estilos-op-pg-flex">
             Ofrecemos planes de pago a meses sin intereses con tarjetas participantes.<br>
             Anticipo del 60% para reservar, el resto hasta 7 días antes del viaje.<br>

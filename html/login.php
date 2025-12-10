@@ -24,7 +24,7 @@ if(isset($_POST["bton_iniciar_sesion"])){
 
     <div class="contenedor">
       <h2>Registro De Usuarios</h2>
-      <form id="forma" name="forma" method="POST" action="../html/login.php" >
+      <form id="forma" name="forma" method="post" action="../html/login.php" >
         <div class="elemento">
           <label for="e-mail_registro">propociona tu e-mail:</label>
           <input type="email" id="e-mail_registro" name="e-mail_registro" />

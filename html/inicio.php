@@ -13,7 +13,7 @@
 
     <!--imagen -->
     <label for="menu-palanca" class="menu-btn">
-      <img src="../imajenes/icono-alebrige.png" alt="Menú" />
+      <img src="../imajenes/hamburgesa.png" alt="Menú" />
     </label>
 
     <!-- menu lateral -->
@@ -38,7 +38,10 @@
     <!-- Seccion Hero -->
     <div class="hero-section">
       <h2>Descubre Tlaxcala</h2>
-      <p>Explora la riqueza cultural y natural de nuestro estado</p>
+      <h2>y sus alrededores</h2>
+      <br>
+      <p>Explora la riqueza cultural y natural</p>
+      <p>De Tlaxcala</p>
     </div>
 
     <!-- Scroll de Destinos -->
@@ -46,7 +49,8 @@
       <h2 class="seccion-titulo">Destinos Populares</h2>
       
       <div class="scroll-contenedor">
-        <div class="destino-card">
+        <!-- destinos -->
+      <div class="destino-card">
           <img src="../imajenes/Luciernagas-nanacamilpa.jpg" alt="Nanacamilpa" />
           <div class="destino-info">
             <h3>Nanacamilpa</h3>
@@ -73,14 +77,14 @@
           </div>
         </div>
 
-        <div class="destino-card">
+        <!-- <div class="destino-card">
           <img src="../imajenes/Puebla-ciudad.webp" alt="Puebla ciudad" />
           <div class="destino-info">
             <h3>Puebla ciudad</h3>
             <p>Historia colonial, talavera poblana y la deliciosa cocina tradicional, una ciudad grande con mucho que ofrecer: arquitectura barroca, cultura, comida, artesanías.</p>
             <a href="../html/destinos.php" class="btn-destino">Ver más</a>
           </div>
-        </div>
+        </div>-->
 
         <div class="destino-card">
           <img src="../imajenes/xochitecatl-piramide.jpg" alt="Zona Arqueológica de Xochitécatl" />
@@ -91,15 +95,37 @@
           </div>
         </div>
 
-        <div class="destino-card">
+      <!--  <div class="destino-card">
           <img src="../imajenes/La-laguna-Chignahuapan.jpg" alt="Chignahuapan" />
           <div class="destino-info">
             <h3>Chignahuapan</h3>
             <p>Ya en el estado de Puebla, pero relativamente cercano, famoso por sus lagunas, termales y producción de esferas navideñas. Buena opción para ampliar el radio de visita.</p>
             <a href="../html/destinos.php" class="btn-destino">Ver más</a>
           </div>
+        </div>-->
+        
+        <div class="destino-card">
+          <img src="../imajenes/TLAXCO-Tlax.jpg" alt="Tlaxco" />
+          <div class="destino-info">
+            <h3>Tlaxco</h3>
+            <h3>Un sitio de bosques</h3>
+            <p>Conocido por sus maravillosos paisajes de montañas, ideal para una escapada de fin de semana, destacando por sus haciendas, talleres artesanales.</p>
+            <a href="../html/destinos.php" class="btn-destino">Ver más</a>
+          </div>
         </div>
-      </div>
+
+        <div class="destino-card">
+          <img src="../imajenes/barca-de-la-fe.jpeg" alt="Barca de la fe" />
+          <div class="destino-info">
+            <h3>Barca de la fe</h3>
+            <h3>Iglesia en forma de barco</h3>
+            <p>La Barca de la Fe es un templo católico, es famoso por su peculiar y original arquitectura en forma de barco.</p>
+            <a href="../html/destinos.php" class="btn-destino">Ver más</a>
+          </div>
+        </div>
+
+      </div> 
+
 
       <!-- Seccion de paquetes destacados -->
       <h2 class="seccion-titulo">Paquetes Especiales</h2>

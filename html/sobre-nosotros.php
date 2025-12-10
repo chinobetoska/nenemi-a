@@ -16,7 +16,7 @@ include("../controladores/verificar_sesion.php");
 
     <!--imagen -->
     <label for="menu-palanca" class="menu-btn">
-      <img src="../imajenes/icono-alebrige.png" alt="Menú" />
+      <img src="../imajenes/hamburgesa.png" alt="Menú" />
     </label>
 
     <!-- menu lateral -->

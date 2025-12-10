@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background: linear-gradient(#F6B93B, #C97A40);
+    background: linear-gradient(#FAFAF8, #F1F3F4);
     background-repeat: no-repeat;
     background-attachment: fixed; 
 }
@@ -19,7 +19,7 @@ body {
     font-size: xx-large;
     margin-top: 20px;
     text-align: center;
-    color: #FEFCF7;
+    color: #000000;
 }
 .contenedor{
     margin: 50px auto;
@@ -33,10 +33,10 @@ body {
     padding: 0;
     font-size: x-large;
     text-align: center;
-    color: #5E5E5E;
+    color: #2A5D3A;
 }
 .contenedor .elemento label{
-    color:#FEFCF7;
+    color:#555555;
     font-size: larger;
 }
 .contenedor .elemento input{
@@ -45,7 +45,7 @@ body {
     color: #000;
     background: transparent;
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #ffffff00;
     margin-bottom: 30px;
     font-size: larger;
 }
@@ -299,7 +299,7 @@ footer {
 }
 
 .scroll-contenedor::-webkit-scrollbar-thumb {
-  background: #8B4A23;
+  background: #F4B400;
   border-radius: 10px;
 }
 
@@ -374,7 +374,7 @@ margin: 40px 0;
 .hero-section {
   text-align: center;
   padding: 60px 20px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(166, 107, 206, 0.3);
   border-radius: 20px;
   margin: 30px auto;
   max-width: 1200px;
@@ -382,14 +382,14 @@ margin: 40px 0;
 
 .hero-section h2 {
   font-size: 3em;
-  color: #FEFCF7;
+  color: #333333;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-section p {
   font-size: 1.3em;
-  color: #FEFCF7;
+  color: #555555;
   margin-bottom: 30px;
 }
 
@@ -403,7 +403,7 @@ margin: 40px 0;
 
 .seccion-titulo {
   text-align: center;
-  color: #FEFCF7;
+  color: #333333;
   font-size: 2.5em;
   margin: 40px 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -485,8 +485,15 @@ display: block;
 margin-top: 20px;
 }
 
+#paq-basicoo{
+  background: linear-gradient(135deg, #2E7D32, #15da1f);
+}
+#paq-aventurero{
+  background: linear-gradient(135deg, #D32F2F, #fc0303);
+}
+
 #paq-premium{
-  background: linear-gradient(135deg, #F6B93B, #C97A40);
+  background: linear-gradient(135deg, #1565C0, #0077ff);
 }
 
 #paq-familiar{
@@ -494,11 +501,11 @@ margin-top: 20px;
 }
 
 #paq-cultural{
-  background: linear-gradient(135deg, #B84E2C, #8B4A23);
+  background: linear-gradient(135deg, #6A1B9A, #9d00ff);
 }
 
 #paq-finsema{
-  background: linear-gradient(135deg, #C97A40, #F6B93B);
+  background: linear-gradient(135deg, #EF6C00, #ac652c);
 }
 
 #nosotros-info{

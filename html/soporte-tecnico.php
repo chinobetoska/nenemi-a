@@ -16,7 +16,7 @@ include("../controladores/verificar_sesion.php");
 
     <!--imagen -->
     <label for="menu-palanca" class="menu-btn">
-      <img src="../imajenes/icono-alebrige.png" alt="Menú" />
+      <img src="../imajenes/hamburgesa.png" alt="Menú" />
     </label>
 
     <!-- menu lateral -->
@@ -39,6 +39,11 @@ include("../controladores/verificar_sesion.php");
     <!-- fin del menu-->
 
     <!-- Contenido de soporte -->
+
+    <div class="alerta alerta-warning">
+      <h2>Esta parte del proyecto esta en desarrollo todavia, estamos trabajando mucho para que puedas hacer reportes sobre errores en el sitio.</h2>
+     </div>
+
     <div class="pagina-contenedor">
       <h1 class="seccion-titulo">Soporte y Contacto</h1>
 
